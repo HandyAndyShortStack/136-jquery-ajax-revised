@@ -1,0 +1,3 @@
+<% @task.complete? ? task_category = "complete_tasks" : task_category = "incomplete_tasks" %>
+
+$('#edit_task_<%= @task.id %>').appendTo(<%= task_category %>);
